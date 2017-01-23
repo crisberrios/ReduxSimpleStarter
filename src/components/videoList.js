@@ -2,7 +2,7 @@ import React from 'react'
 import VideoListItem from './videoListItem'
 
 const VideoList = ({videos}) => {
-  const videoList = videos.map(video => <VideoListItem video={video} />)
+  const videoList = videos.map(video => <VideoListItem key={video.etag} video={video} />)
   return <ul>{videoList}</ul>
 }
 
