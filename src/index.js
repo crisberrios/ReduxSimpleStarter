@@ -1,3 +1,8 @@
-//Create new component
+import React from 'react'
+import ReactDOM from 'react-dom'
 
-//Render component to DOM
+// Create new component
+const App = () => <div>Hey y'all</div>
+
+// Render component to DOM
+ReactDOM.render(<App />, document.getElementById('app'))
