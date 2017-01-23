@@ -19,9 +19,15 @@ class App extends Component {
 
   render () {
     return (
-      <div>
-        <SearchBar />
-        <VideoList videos={this.state.videos} />
+      <div className="row">
+        <div className="card">
+          <div className="card-header">
+            <SearchBar />
+          </div>
+          <div className="card-block">
+            <VideoList videos={this.state.videos} />
+          </div>
+        </div>
       </div>
     )
   }
